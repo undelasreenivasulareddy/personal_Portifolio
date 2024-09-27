@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+    
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: transparent; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #4299e1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 0.5rem 1rem;
+    border-radius: 8px; 
+}
+
+.toggle-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    
+}
+
+#navbar-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff !important;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 1rem; 
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4299e1;
+}
+
+@media only screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none; 
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 1rem 0; 
+        text-align: center;
+    }
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    z-index: 1;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.social-icons a {
+    color: #4299e1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3182ce;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #4a5568;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+form button[type="submit"] {
+    background-color: #4299e1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3182ce;
+}
+.icon-html5 {
+    color: #e34f26;
+}
+
+.icon-css3 {
+    color: #1572b6;
+}
+
+.icon-js {
+    color: #f7df1e;
+}
+
+.icon-sql {
+    color: #00ed64;
+}
+
+.icon-python {
+    color: #3776ab;
+}
+
+.icon-powerbi {
+    color: #f2c811;
+}
+
+.icon-git {
+    color: #f34f29;
+}
+
+.icon-linux {
+    color: #4caf50;
+}
+
+.icon-data-analysis {
+    color: #e6edf3;
+}
+
+.icon-machine-learning {
+    color: #ff9800;
+}
+.icon-github {
+    color:#e6edf3;
+}
+
+.icon-bootstrap{
+    color:#7809f7;
+}
+
+.icon-twitter {
+    color: #1DA1F2;
+}
+
+.icon-linkedin {
+    color: #0077B5;
+}
